@@ -4,13 +4,8 @@ text-align: center;
 }
 
 .state rect {
-  /*
-  fill: #18BC9C;
-  fill:#2098d1;
-*/
-  stroke: #2098d1;
-  stroke-width: 5px;
-  fill:#d14;
+  stroke: #000;
+  stroke-width: 2px;
   opacity: 0.3;
 }
 

@@ -29,6 +29,7 @@ fetchData()
         .attr('height', 40)
         .attr('width', 40)
         .attr('transform', 'translate(-20,-20)')
+        .attr('fill', d => colorGroupBlock(d.groupBlock))
         .on('mouseover', d => {
           tooltip.transition()
              .duration(200)
