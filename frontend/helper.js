@@ -1,5 +1,7 @@
 const slider = document.getElementById('myRange');
+const colorToggle = document.getElementById('colorToggle');
 let sliderVal = slider.value;
+let colorByTemp = false;
 console.log(sliderVal);
 
 function findSymbol(obj, symbol){
@@ -81,5 +83,13 @@ function colorTemperatureBlocks(d){
     return '#003366';
   } else { //gas
     return '#7e2718';
+  }
+}
+
+function updateColorToggleState(){
+  if(colorToggle.checked){
+    colorByTemp = true;
+  } else {
+    colorByTemp = false;
   }
 }
