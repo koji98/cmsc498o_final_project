@@ -48,8 +48,13 @@ div.tooltip {
 	-webkit-appearance: none;
 	width: 100%;
 	height: 15px;
+<<<<<<< HEAD
 	border-radius: 5px;   
 	background: #ccc;
+=======
+	border-radius: 5px;
+	background: #d3d3d3;
+>>>>>>> 129eab996816101842a3e2e41203a26d6635cfe7
 	outline: none;
 	opacity: 0.7;
 	-webkit-transition: .2s;
@@ -73,6 +78,7 @@ div.tooltip {
 	background: #000000;
 	cursor: pointer;
 }
+<<<<<<< HEAD
 
 .switch {
   position: relative;
@@ -137,3 +143,5 @@ input:checked + .slider2:before {
   border-radius: 50%;
   background-color: #000000;
 }
+=======
+>>>>>>> 129eab996816101842a3e2e41203a26d6635cfe7
