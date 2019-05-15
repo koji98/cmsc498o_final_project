@@ -1,3 +1,7 @@
+const slider = document.getElementById('myRange');
+let sliderVal = slider.value;
+console.log(sliderVal);
+
 function findSymbol(obj, symbol){
   return obj.data.filter(x => x.symbol === symbol)[0];
 }
@@ -55,5 +59,27 @@ function colorGroupBlock(groupBlock){
     return '#3cb44b';
   } else if(groupBlock === 'post-transition metal') {
      return '#42d4f4';
+  }
+}
+
+function kelvinToCelsius(k){
+  return k - 273.15;
+}
+
+function kelvinToFahrenheit(k){
+  return ((9/5) * (k - 273.15)) + 32;
+}
+
+// slider.oninput = function(){
+//   sliderVal = this.value;
+// }
+
+function colorTemperatureBlocks(d){
+  if(sliderVal < d.meltingPoint) { //solid
+    return '#000';
+  } else if(sliderVal >= d.meltingPoint && sliderVal < d.boilingPoint) { //liquid
+    return '#003366';
+  } else { //gas
+    return '#7e2718';
   }
 }

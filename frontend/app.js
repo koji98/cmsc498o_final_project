@@ -29,7 +29,8 @@ fetchData()
         .attr('height', 40)
         .attr('width', 40)
         .attr('transform', 'translate(-20,-20)')
-        .attr('fill', d => colorGroupBlock(d.groupBlock))
+        .attr('fill', d => colorTemperatureBlocks(d))
+        // .attr('fill', d => colorGroupBlock(d.groupBlock))
         .on('mouseover', d => {
           tooltip.transition()
              .duration(200)
@@ -47,6 +48,11 @@ fetchData()
   state.append('text')
        .attr('dy', '.55em')
        .text(d => d.symbol)
+
+  slider.oninput = function(){
+    sliderVal = this.value;
+    console.log(sliderVal);
+  }
   // console.log(states);
 
 })
