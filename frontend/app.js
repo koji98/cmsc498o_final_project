@@ -1,3 +1,12 @@
+/*
+1.) display the temperature in fahrenheight, celsius, and kelvin when in temp mode
+2.) add in on-click events for group blocks (in progress)
+3.) Update the tooltips on hover, make information better and make it look better
+4.) Onclick methods for elements so you can get more information on that specific element
+5.) Prototype the fusion of elements as recommened by the professor (ex. h20, etc.)
+*/
+
+
 fetchData()
 .then(data => {
   const states = [];
