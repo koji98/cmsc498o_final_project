@@ -52,6 +52,8 @@ fetchData()
   slider.oninput = function(){
     sliderVal = this.value;
     console.log(sliderVal);
+	d3.selectAll('rect')
+	  .attr('fill', d => colorTemperatureBlocks(d));
   }
   // console.log(states);
 
