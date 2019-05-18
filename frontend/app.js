@@ -1,8 +1,5 @@
 /*
-1.) display the temperature in fahrenheight, celsius, and kelvin when in temp mode
 2.) add in on-click events for group blocks (in progress)
-3.) Update the tooltips on hover, make information better and make it look better
-4.) Onclick methods for elements so you can get more information on that specific element
 5.) Prototype the fusion of elements as recommened by the professor (ex. h20, etc.)
 */
 
@@ -32,7 +29,10 @@ fetchData()
                 .attr('class', 'tooltip')
                 .style('opacity', 0);
 
-  state.append('rect')
+  state.append('a')
+        .attr('href', d => `https://www.lenntech.com/periodic/elements/${correctHREF(d.symbol.toLowerCase())}.htm`)
+        .attr('target', '_blank')
+       .append('rect')
         .attr('x', 1)
         .attr('y', 1)
         .attr('height', 40)
@@ -43,7 +43,7 @@ fetchData()
           tooltip.transition()
              .duration(200)
              .style('opacity', .9);
-          tooltip.html(`${d.atomicNumber}</br>${d.symbol}</br>${d.groupBlock}`)
+          tooltip.html(`<span class="tooltipName">${d.name} (${d.atomicNumber})</span></br>Atomic Mass: ${Array.isArray(d.atomicMass) ? (d.atomicMass[0]) : (String(d.atomicMass).substr(0, String(d.atomicMass).length - 3))}</br>Group Block: ${d.groupBlock}`)
              .style('left', `${d3.event.pageX}px`)
              .style('top', `${d3.event.pageY - 28}px`)
         })
@@ -53,24 +53,53 @@ fetchData()
              .style('opacity', 0);
         });
 
-  state.append('text')
-       .attr('dy', '.55em')
-       .text(d => d.symbol)
+  state.append('a')
+        .attr('href', d => `https://www.lenntech.com/periodic/elements/${correctHREF(d.symbol.toLowerCase())}.htm`)
+        .attr('target', '_blank')
+       .append('text')
+        .attr('dy', '.55em')
+        .text(d => d.symbol)
+        .on('mouseover', d => {
+         tooltip.transition()
+            .duration(200)
+            .style('opacity', .9);
+         tooltip.html(`<span class="tooltipName">${d.name} (${d.atomicNumber})</span></br>Atomic Mass: ${Array.isArray(d.atomicMass) ? (d.atomicMass[0]) : (String(d.atomicMass).substr(0, String(d.atomicMass).length - 3))}</br>Group Block: ${d.groupBlock}`)
+            .style('left', `${d3.event.pageX}px`)
+            .style('top', `${d3.event.pageY - 28}px`)
+       })
+        .on('mouseout', d => {
+         tooltip.transition()
+            .duration(100)
+            .style('opacity', 0);
+       });
 
   slider.oninput = function() {
     sliderVal = this.value;
 	   d3.selectAll('rect')
 	    .attr('fill', d => colorByTemp ? colorTemperatureBlocks(d) : colorGroupBlock(d.groupBlock));
+
+    if(colorByTemp){
+      kelvinTemp.innerHTML = sliderVal + " &#8490;";
+      fahrenheightTemp.innerHTML = kelvinToFahrenheit(sliderVal) + " &#8457;";
+      celsiusTemp.innerHTML = kelvinToCelsius(sliderVal) + " &#8451;"
+    }
   }
 
   colorToggle.onchange = function(){
     updateColorToggleState();
     d3.selectAll('rect')
      .attr('fill', d => colorByTemp ? colorTemperatureBlocks(d) : colorGroupBlock(d.groupBlock));
+
+    if(!colorByTemp){
+      kelvinTemp.innerHTML = "";
+      fahrenheightTemp.innerHTML = "";
+      celsiusTemp.innerHTML = "";
+    } else {
+      kelvinTemp.innerHTML = sliderVal + " &#8490;";
+      fahrenheightTemp.innerHTML = kelvinToFahrenheit(sliderVal) + " &#8457;";
+      celsiusTemp.innerHTML = kelvinToCelsius(sliderVal) + " &#8451;";
+    }
   }
-
-
-  // console.log(states);
 
 })
 .catch(e => console.log(e));

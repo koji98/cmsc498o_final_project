@@ -21,8 +21,8 @@ text-align: center;
 div.tooltip {
     position: absolute;
     text-align: center;
-    width: 60px;
-    height: 100px;
+    width: 200px;
+    height: 50px;
     padding: 2px;
     font: 12px sans-serif;
     background: lightsteelblue;
@@ -31,12 +31,27 @@ div.tooltip {
     pointer-events: none;
 }
 
+.tooltipName {
+  font-weight: bold;
+}
+
 .togglecontainer {
 	width: 30%; /* Width of the outside container */
 	margin: 0 auto;
 	padding-bottom: 10px;
 	font: 15px sans-serif;
 	line-height: 34px;
+}
+
+
+.tempcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .slidecontainer {
@@ -48,7 +63,7 @@ div.tooltip {
 	-webkit-appearance: none;
 	width: 100%;
 	height: 15px;
-	border-radius: 5px;   
+	border-radius: 5px;
 	background: #ccc;
 	outline: none;
 	opacity: 0.7;
@@ -136,4 +151,140 @@ input:checked + .slider2:before {
 .slider2.round:before {
   border-radius: 50%;
   background-color: #000000;
+}
+
+
+#alkali {
+  background-color: rgba(240, 50, 230, .3);
+  border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  /* padding: 15px 25px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+
+}
+
+#earth {
+  background-color: rgba(145, 30, 180, .3);
+   border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  /* padding: 15px 25px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+
+}
+
+#lanthanoids {
+  background-color: rgba(191, 239, 69, .3);
+   border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  /* padding: 15px 25px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+
+}
+
+#actinoids {
+  background-color: rgba(60, 180, 75, .3);
+   border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  /* padding: 15px 25px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+
+}
+
+
+#transition {
+  background-color: rgba(255, 225, 25, .3);
+   border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  /* padding: 15px 25px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+
+}
+
+#post {
+  background-color: rgba(66, 212, 244, .3);
+   border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  /* padding: 15px 25px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+
+}
+
+
+#metalloids {
+  background-color: rgba(67, 99, 216, .3);
+  border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  /* padding: 15px 25px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+
+}
+
+#metals {
+  background-color: rgba(245, 130, 49, .3);
+  border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  /* padding: 15px 25px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+
+}
+
+#halogens {
+  background-color: rgba(230, 25, 75, .3);
+  border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  /* padding: 15px 25px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+
+}
+
+
+#nonmetals {
+  background-color: rgba(128, 0, 0, .3);
+  border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  /* padding: 15px 25px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+
+}
+
+#noble {
+  background-color: rgba(169, 169, 169, .3); /* #a9a9a9*/
+  border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  /* padding: 15px 25px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+
 }

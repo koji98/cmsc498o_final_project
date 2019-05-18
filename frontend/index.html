@@ -7,6 +7,18 @@
   </head>
   <body>
 
+    <button id="alkali" class="button">Alkali Metals</button>
+    <button id="earth" class="button">Alkaline Earth Metals</button>
+    <button id="lanthanoids" class="button">Lanthanoids</button>
+    <button id="actinoids" class="button">Actinoids</button>
+    <button id="transition" class="button">Transition Metals</button>
+    <button id="post" class="button">Post Transition Metals</button>
+    <button id="metalloids" class="button">Metalloids</button>
+    <button id="halogens" class="button">Halogens</button>
+     <button id="metals" class="button">Metals</button>
+    <button id="nonmetals" class="button">Nonmetals</button>
+    <button id="noble" class="button">Noble Gases</button>
+
     <svg width="960" height="700"></svg>
 
     <script id="grid" type="text/plain">
@@ -15,7 +27,7 @@ Li Be                               B  C  N  O  F  Ne
 Na Mg                               Al Si P  S  Cl Ar
 K  Ca Sc Ti V  Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr
 Rb Sr Y  Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I  Xe
-Cs Ba :: Hf Ta W  Re Os Ir Pt Au Hg Ti Pb Bi Po At Rn
+Cs Ba :: Hf Ta W  Re Os Ir Pt Au Hg Tl Pb Bi Po At Rn
 Fr Ra :: Rf Db Sg Bh Hs Mt Ds Rg Cn Nh Fl Mc Lv Ts Og
 
       La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu
@@ -30,6 +42,11 @@ Fr Ra :: Rf Db Sg Bh Hs Mt Ds Rg Cn Nh Fl Mc Lv Ts Og
 	</div>
     <div class="slidecontainer">
         <input type="range" min="0" max="6000" value="273" class="slider" id="myRange">
+    </div>
+    <div class="tempcontainer">
+      <span id="kelvinTemp"></span>
+      <span id="celsiusTemp"></span>
+      <span id="fahrenheightTemp"></span>
     </div>
 
 
