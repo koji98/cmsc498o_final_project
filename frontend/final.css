@@ -3,6 +3,7 @@ background-color: #fff;
 text-align: center;
 }
 
+
 .state rect {
   stroke: #000;
   stroke-width: 2px;
@@ -64,4 +65,140 @@ div.tooltip {
 	border-radius: 50%;
 	background: #000000;
 	cursor: pointer;
+}
+
+
+#alkali {
+  background-color: rgba(240, 50, 230, .3); 
+  border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+
+}
+
+#earth {
+  background-color: rgba(145, 30, 180, .3); 
+   border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  
+}
+
+#lanthanoids {
+  background-color: rgba(191, 239, 69, .3); 
+   border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  
+}
+
+#actinoids {
+  background-color: rgba(60, 180, 75, .3); 
+   border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  
+}
+
+
+#transition {
+  background-color: rgba(255, 225, 25, .3); 
+   border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  
+}
+
+#post {
+  background-color: rgba(66, 212, 244, .3); 
+   border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  
+}
+
+
+#metalloids {
+  background-color: rgba(67, 99, 216, .3); 
+  border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  
+}
+
+#metals {
+  background-color: rgba(245, 130, 49, .3); 
+  border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+
+}
+
+#halogens {
+  background-color: rgba(230, 25, 75, .3); 
+  border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+ 
+}
+
+
+#nonmetals {
+  background-color: rgba(128, 0, 0, .3); 
+  border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  
+}
+
+#noble {
+  background-color: rgba(169, 169, 169, .3); /* #a9a9a9*/
+  border: 2px solid rgba(0, 0, 0, .3);
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  
 }

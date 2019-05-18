@@ -57,3 +57,127 @@ function colorGroupBlock(groupBlock){
      return '#42d4f4';
   }
 }
+
+
+
+//hover button helper functions:
+
+
+function hoverOff() {
+      d3.selectAll('rect')
+          .attr('fill', d=>colorGroupBlock(d.groupBlock));                  
+ }
+
+function alkaliHoverOn() {
+      d3.selectAll('rect')
+          .attr('fill', function(d) {
+              console.log(d.groupBlock)
+              if (d.groupBlock === 'alkali metal') {
+                return colorGroupBlock(d.groupBlock);
+              }
+          });                  
+ }
+
+ function earthHoverOn() {
+      d3.selectAll('rect')
+          .attr('fill', function(d) {
+              console.log(d.groupBlock)
+              if (d.groupBlock === 'alkaline earth metal') {
+                return colorGroupBlock(d.groupBlock);
+              }
+          });                  
+ }
+
+ function lanthanoidsHoverOn() {
+      d3.selectAll('rect')
+          .attr('fill', function(d) {
+              console.log(d.groupBlock)
+              if (d.groupBlock === 'lanthanoid') {
+                return colorGroupBlock(d.groupBlock);
+              }
+          });                  
+ }
+
+ function actinoidsHoverOn() {
+      d3.selectAll('rect')
+          .attr('fill', function(d) {
+              console.log(d.groupBlock)
+              if (d.groupBlock === 'actinoid') {
+                return colorGroupBlock(d.groupBlock);
+              }
+          });                  
+ }
+
+ function transitionHoverOn() {
+      d3.selectAll('rect')
+          .attr('fill', function(d) {
+              console.log(d.groupBlock)
+              if (d.groupBlock === 'transition metal') {
+                return colorGroupBlock(d.groupBlock);
+              }
+          });                  
+ }
+
+ function postHoverOn() {
+      d3.selectAll('rect')
+          .attr('fill', function(d) {
+              console.log(d.groupBlock)
+              if (d.groupBlock === 'post-transition metal') {
+                return colorGroupBlock(d.groupBlock);
+              }
+          });                  
+ }
+
+ function metalloidsHoverOn() {
+      d3.selectAll('rect')
+          .attr('fill', function(d) {
+              console.log(d.groupBlock)
+              if (d.groupBlock === 'metalloid') {
+                return colorGroupBlock(d.groupBlock);
+              }
+          });                  
+ }
+
+ function halogensHoverOn() {
+      d3.selectAll('rect')
+          .attr('fill', function(d) {
+              console.log(d.groupBlock)
+              if (d.groupBlock === 'halogen') {
+                return colorGroupBlock(d.groupBlock);
+              }
+          });                  
+ }
+
+ function metalsHoverOn() {
+      d3.selectAll('rect')
+          .attr('fill', function(d) {
+              console.log(d.groupBlock)
+              if (d.groupBlock === 'metal') {
+                return colorGroupBlock(d.groupBlock);
+              }
+          });                  
+ }
+
+function nonmetalsHoverOn() {
+      d3.selectAll('rect')
+          .attr('fill', function(d) {
+              console.log(d.groupBlock)
+              if (d.groupBlock === 'nonmetal') {
+                return colorGroupBlock(d.groupBlock);
+              }
+          });                  
+ }
+
+ function nobleHoverOn() {
+      d3.selectAll('rect')
+          .attr('fill', function(d) {
+              console.log(d.groupBlock)
+              if (d.groupBlock === 'noble gas') {
+                return colorGroupBlock(d.groupBlock);
+              }
+          });                  
+ }
+
+
+
+

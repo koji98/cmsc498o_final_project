@@ -49,5 +49,53 @@ fetchData()
        .text(d => d.symbol)
   // console.log(states);
 
+
+
+
+  //hover button actions:
+  document.getElementById("alkali").addEventListener("mouseover", alkaliHoverOn);
+  document.getElementById("alkali").addEventListener("mouseout", hoverOff);
+
+  document.getElementById("earth").addEventListener("mouseover", earthHoverOn);
+  document.getElementById("earth").addEventListener("mouseout", hoverOff);
+
+  document.getElementById("lanthanoids").addEventListener("mouseover", lanthanoidsHoverOn);
+  document.getElementById("lanthanoids").addEventListener("mouseout", hoverOff);
+
+  document.getElementById("actinoids").addEventListener("mouseover", actinoidsHoverOn);
+  document.getElementById("actinoids").addEventListener("mouseout", hoverOff);
+
+   document.getElementById("transition").addEventListener("mouseover", transitionHoverOn);
+  document.getElementById("transition").addEventListener("mouseout", hoverOff);
+
+   document.getElementById("post").addEventListener("mouseover", postHoverOn);
+  document.getElementById("post").addEventListener("mouseout", hoverOff);
+
+   document.getElementById("metalloids").addEventListener("mouseover", metalloidsHoverOn);
+  document.getElementById("metalloids").addEventListener("mouseout", hoverOff);
+
+   document.getElementById("halogens").addEventListener("mouseover", halogensHoverOn);
+  document.getElementById("halogens").addEventListener("mouseout", hoverOff);
+
+   document.getElementById("metals").addEventListener("mouseover", metalsHoverOn);
+  document.getElementById("metals").addEventListener("mouseout", hoverOff);
+
+   document.getElementById("nonmetals").addEventListener("mouseover", nonmetalsHoverOn);
+  document.getElementById("nonmetals").addEventListener("mouseout", hoverOff);
+
+   document.getElementById("noble").addEventListener("mouseover", nobleHoverOn);
+  document.getElementById("noble").addEventListener("mouseout", hoverOff);
+
+
+
+
+
+
+
+
+
+
+
+
 })
 .catch(e => console.log(e));
