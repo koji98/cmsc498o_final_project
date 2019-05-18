@@ -18,6 +18,10 @@ text-align: center;
   fill: white ;
 }
 
+.state text {
+  pointer-events: none;
+}
+
 div.tooltip {
     position: absolute;
     text-align: center;
@@ -153,11 +157,18 @@ input:checked + .slider2:before {
   background-color: #000000;
 }
 
+.buttoncontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 
 #alkali {
   background-color: rgba(240, 50, 230, .3);
   border: 2px solid rgba(0, 0, 0, .3);
   color: black;
+  padding: .75% 1.25%;
   /* padding: 15px 25px; */
   text-align: center;
   text-decoration: none;
@@ -170,22 +181,23 @@ input:checked + .slider2:before {
   background-color: rgba(145, 30, 180, .3);
    border: 2px solid rgba(0, 0, 0, .3);
   color: black;
+  padding: .75% 1.25%;
   /* padding: 15px 25px; */
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 12px;
-
 }
 
 #lanthanoids {
   background-color: rgba(191, 239, 69, .3);
    border: 2px solid rgba(0, 0, 0, .3);
   color: black;
+  padding: .75% 1.25%;
   /* padding: 15px 25px; */
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 12px;
 
 }
@@ -194,10 +206,11 @@ input:checked + .slider2:before {
   background-color: rgba(60, 180, 75, .3);
    border: 2px solid rgba(0, 0, 0, .3);
   color: black;
+  padding: .75% 1.25%;
   /* padding: 15px 25px; */
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 12px;
 
 }
@@ -207,10 +220,11 @@ input:checked + .slider2:before {
   background-color: rgba(255, 225, 25, .3);
    border: 2px solid rgba(0, 0, 0, .3);
   color: black;
+  padding: .75% 1.25%;
   /* padding: 15px 25px; */
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 12px;
 
 }
@@ -219,10 +233,11 @@ input:checked + .slider2:before {
   background-color: rgba(66, 212, 244, .3);
    border: 2px solid rgba(0, 0, 0, .3);
   color: black;
+  padding: .75% 1.25%;
   /* padding: 15px 25px; */
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 12px;
 
 }
@@ -232,10 +247,11 @@ input:checked + .slider2:before {
   background-color: rgba(67, 99, 216, .3);
   border: 2px solid rgba(0, 0, 0, .3);
   color: black;
+  padding: .75% 1.25%;
   /* padding: 15px 25px; */
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 12px;
 
 }
@@ -244,10 +260,11 @@ input:checked + .slider2:before {
   background-color: rgba(245, 130, 49, .3);
   border: 2px solid rgba(0, 0, 0, .3);
   color: black;
+  padding: .75% 1.25%;
   /* padding: 15px 25px; */
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 12px;
 
 }
@@ -256,10 +273,11 @@ input:checked + .slider2:before {
   background-color: rgba(230, 25, 75, .3);
   border: 2px solid rgba(0, 0, 0, .3);
   color: black;
+  padding: .75% 1.25%;
   /* padding: 15px 25px; */
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 12px;
 
 }
@@ -269,10 +287,11 @@ input:checked + .slider2:before {
   background-color: rgba(128, 0, 0, .3);
   border: 2px solid rgba(0, 0, 0, .3);
   color: black;
+  padding: .75% 1.25%;
   /* padding: 15px 25px; */
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 12px;
 
 }
@@ -281,10 +300,11 @@ input:checked + .slider2:before {
   background-color: rgba(169, 169, 169, .3); /* #a9a9a9*/
   border: 2px solid rgba(0, 0, 0, .3);
   color: black;
+  padding: .75% 1.25%;
   /* padding: 15px 25px; */
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 12px;
 
 }
