@@ -1,4 +1,5 @@
 const slider = document.getElementById('myRange');
+const sliderContainer = document.querySelector('.slidecontainer');
 const colorToggle = document.getElementById('colorToggle');
 const kelvinTemp = document.getElementById('kelvinTemp');
 const fahrenheightTemp = document.getElementById('fahrenheightTemp');

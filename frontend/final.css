@@ -1,4 +1,4 @@
-body{
+body {
 background-color: #fff;
 text-align: center;
 }
@@ -61,6 +61,7 @@ div.tooltip {
 .slidecontainer {
 	width: 30%; /* Width of the outside container */
 	margin: 0 auto;
+  display: none;
 }
 
 .slider {

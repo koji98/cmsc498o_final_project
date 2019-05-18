@@ -93,10 +93,12 @@ fetchData()
       kelvinTemp.innerHTML = "";
       fahrenheightTemp.innerHTML = "";
       celsiusTemp.innerHTML = "";
+      sliderContainer.style.display = "none";
     } else {
       kelvinTemp.innerHTML = sliderVal + " &#8490;";
       fahrenheightTemp.innerHTML = kelvinToFahrenheit(sliderVal) + " &#8457;";
       celsiusTemp.innerHTML = kelvinToCelsius(sliderVal) + " &#8451;";
+      sliderContainer.style.display = "block";
     }
   }
 
