@@ -1,5 +1,4 @@
 /*
-2.) add in on-click events for group blocks (in progress)
 5.) Prototype the fusion of elements as recommened by the professor (ex. h20, etc.)
 */
 
